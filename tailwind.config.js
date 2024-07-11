@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,18 +5,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      'primary': '#0F0920',
-      'secondary': '#221C3E',
-      'terciary': '#F2F0FF'
-    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#0F0920",
+        secondary: "#221C3E",
+        tertiary: "#F2F0FF",
+        black: "#000000",
+        red: "#E53939",
+        white: "#FFFFFF",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };

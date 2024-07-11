@@ -1,19 +1,11 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <>
-      {/* 
-        Exemplo:
-        Crie o componente, importe acima do export default e chame ele no local indicado dessa forma:
-        <Header />
-      */}
+      <Navbar />
       <Header />
-      <span className="block">[Coloque aqui a sessão: Header]</span>
-      <span className="block">[Coloque aqui a sessão: About]</span>
-      <span className="block">[Coloque aqui a sessão: Products]</span>
-      <span className="block">[Coloque aqui a sessão: FAQ]</span>
-      <span className="block">[Coloque aqui a sessão: Footer]</span>
     </>
   );
 }
