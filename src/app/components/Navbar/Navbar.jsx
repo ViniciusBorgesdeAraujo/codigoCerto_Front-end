@@ -44,7 +44,8 @@ function Example() {
             <img
               alt="Logo Codigo Certo"
               src="/assets/img/logo.webp"
-              className="h-24 w-auto"
+              className="h-20 w-20"
+              style={{ width: "75px", height: "75px" }}
             />
           </div>
           <div className="sm:hidden flex items-center">
@@ -69,21 +70,25 @@ function Example() {
                 style={{
                   width: item.width,
                   height: item.height,
-                  fontFamily: "Roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontSize: "18px",
                   marginRight:
                     item.marginRight ||
                     (index < navigation.length - 1 ? "10px" : "0"),
+                  fontWeight: "400",
                 }}
               >
                 {item.name}
               </a>
             ))}
             <button
-              className="text-white bg-red px-6 py-2 rounded-md hover:bg-black hover:text-red"
+              className="text-white bg-red px-6 py-2 rounded-md transition-colors duration-300 hover:bg-white hover:text-black"
               style={{
                 width: "150px",
                 height: "39.96px",
+                fontFamily: "Roboto, sans-serif",
+                fontSize: "18px",
+                fontWeight: "400",
                 marginTop: "15px",
               }}
             >
@@ -101,11 +106,23 @@ function Example() {
               href={item.href}
               aria-current={item.current ? "page" : undefined}
               className="text-white hover:text-red"
+              style={{
+                fontFamily: "Roboto, sans-serif",
+                fontSize: "18px",
+                fontWeight: "400",
+              }}
             >
               {item.name}
             </a>
           ))}
-          <button className="text-white bg-red px-6 py-2 rounded-md hover:bg-black hover:text-red">
+          <button
+            className="text-white bg-red px-6 py-2 rounded-md transition-colors duration-300 hover:bg-white hover:text-black"
+            style={{
+              fontFamily: "Roboto, sans-serif",
+              fontSize: "18px",
+              fontWeight: "400",
+            }}
+          >
             Contato
           </button>
         </div>

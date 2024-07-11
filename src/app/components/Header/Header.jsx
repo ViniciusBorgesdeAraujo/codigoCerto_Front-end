@@ -7,18 +7,30 @@ const Header = () => {
       <div className="header-video">
         <video className="video-bg" autoPlay loop muted>
           <source src="/assets/video/short.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
       </div>
 
-      <div className="whatsapp-icon"></div>
+      <a
+        href="https://chat.whatsapp.com/CDJL6tRT5apLRXW5PWqYLe"
+        className="whatsapp-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/assets/img/whats.png"
+          alt="WhatsApp"
+          className="whatsapp-img"
+        />
+      </a>
 
-      <div className="codigo-text">
-        <h1>CODIGO</h1>
-      </div>
+      <div className="codigo-certo-container">
+        <div className="codigo-text">
+          <h1>CODIGO</h1>
+        </div>
 
-      <div className="certo-text">
-        <h1>CERTO</h1>
+        <div className="certo-text">
+          <h1>CERTO</h1>
+        </div>
       </div>
 
       <div className="lorem-text">
