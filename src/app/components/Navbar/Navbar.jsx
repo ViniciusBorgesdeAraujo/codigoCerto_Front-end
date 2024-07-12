@@ -36,7 +36,7 @@ const navigation = [
   },
 ];
 
-function Example() {
+function Navbar() {
   return (
     <Disclosure as="nav" className="bg-black fixed w-full z-50 shadow-md">
       {({ open }) => (
