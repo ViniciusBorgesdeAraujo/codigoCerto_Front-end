@@ -30,6 +30,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .video-bg {
@@ -38,7 +39,6 @@ body {
   width: auto;
   height: auto;
   object-fit: cover;
-  z-index: -1;
 }
 
 .whatsapp-icon {
@@ -58,15 +58,15 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  top: 15%;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
 .codigo-text,
 .certo-text {
   font-family: "Turret Road", sans-serif;
-  font-size: 5vw;
-  line-height: 1.2;
+  font-size: 8vw;
+  line-height: 0.8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ body {
 
 .codigo-text {
   font-weight: 800;
-  margin-right: 1vw;
+  margin-right: 0.1vw;
 }
 
 .certo-text {
@@ -87,16 +87,12 @@ body {
 
 .lorem-text {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2.5vw;
   line-height: 1.2;
   text-align: center;
   color: #ffffff;
-  margin-top: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 0.5rem;
 }
 
 .entrar-contato {
@@ -104,21 +100,18 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   z-index: 1001;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .entrar-contato button {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
   color: #000000;
-  padding: 15px 30px;
+  padding: 15px 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 1.5vw;

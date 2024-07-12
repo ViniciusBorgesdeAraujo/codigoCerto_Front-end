@@ -25,11 +25,11 @@ const Header = () => {
 
       <div className="codigo-certo-container">
         <div className="codigo-text">
-          <h1>CODIGO</h1>
+          <h2>CODIGO</h2>
         </div>
 
         <div className="certo-text">
-          <h1>CERTO</h1>
+          <h2>CERTO</h2>
         </div>
       </div>
 
