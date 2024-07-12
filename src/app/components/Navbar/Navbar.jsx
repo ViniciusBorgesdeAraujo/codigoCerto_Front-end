@@ -36,11 +36,7 @@ const navigation = [
   },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-function Navbar() {
+function Example() {
   return (
     <Disclosure as="nav" className="bg-black fixed w-full z-50 shadow-md">
       {({ open }) => (
