@@ -6,15 +6,29 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        turret: ["Turret Road", "sans-serif"],
+      },
+      fontSize: {
+        "18´x": "18px",
+      },
       colors: {
-        primary: "#0F0920",
-        secondary: "#221C3E",
-        tertiary: "#F2F0FF",
-        black: "#000000",
-        red: "#E53939",
-        white: "#FFFFFF",
+        primary: "#E53939",
+        secondary: "#000000",
+        tertiary: "#FFFFFF",
       },
     },
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [
+    require("tailwindcss"),
+    require("autoprefixer"),
+    function ({ addUtilities }) {
+      addUtilities({
+        ".stroke-text": {
+          "-webkit-text-stroke": "1px #ffffff",
+        },
+      });
+    },
+  ],
 };
