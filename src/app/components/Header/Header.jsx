@@ -39,14 +39,14 @@ const Header = () => {
       </div>
 
       <div>
-        <h2 className="font-roboto font-bold text-[30px] leading-[1.2] text-center text-tertiary mb-2">
+        <h2 className="font-roboto font-bold text-[6vw] md:text-[4vw] lg:text-[2.5vw] xl:text-[30px] leading-[1.2] text-center text-tertiary mb-2">
           Lorem ipsum dolor sit amet, consectetur <br />
           adipiscing elit, sed do eiusmod
         </h2>
       </div>
 
       <div className="flex justify-center items-center text-center mt-4 mb-8 z-50">
-        <button className="bg-tertiary font-roboto text-secondary py-4 px-12 border-none rounded-[10px] cursor-pointer transition-colors duration-300 ease-in-out text-[1.5vw] hover:bg-primary hover:text-tertiary">
+        <button className="bg-tertiary font-roboto text-secondary py-2 px-4 md:py-4 md:px-12 border-none rounded-[10px] cursor-pointer transition-colors duration-300 ease-in-out text-sm md:text-[1.5vw] hover:bg-primary hover:text-tertiary">
           Entrar em Contato
         </button>
       </div>
