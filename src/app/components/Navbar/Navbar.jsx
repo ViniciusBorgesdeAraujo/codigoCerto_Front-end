@@ -19,12 +19,10 @@ function Navbar() {
           <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-18">
               <div className="flex-shrink-0 ml-4">
-                {" "}
-                {/* Adicionei margem à esquerda */}
                 <img
                   src="/assets/img/logo.webp"
                   alt="Logo Codigo Certo"
-                  className="h-20 w-20"
+                  className="w-24 h-auto"
                 />
               </div>
               <div className="sm:hidden flex items-center">
